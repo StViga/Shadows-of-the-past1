@@ -1,0 +1,13 @@
+{
+  "ui.new_game": "Новая игра",
+  "ui.load_game": "Загрузить",
+  "ui.settings": "Настройки",
+  "ui.quit": "Выход",
+  "ui.language": "Язык",
+
+  "dlg.barista.hello": "Доброе утро. Кофе?",
+  "dlg.priest.whisper": "Ты тоже слышал, верно? Шепот за алтарем.",
+
+  "hint.door_locked": "Заперто.",
+  "hint.door_key": "Похоже, сюда подойдет ключ."
+}

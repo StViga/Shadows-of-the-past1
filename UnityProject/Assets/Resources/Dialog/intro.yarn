@@ -1,0 +1,13 @@
+title: Intro
+---
+<<if HasFlag("chapel_shadow_whisper")>>
+Priest: The whisper followed you here, didn't it?
+<<else>>
+Priest: You look lost. Prayers can be a compass.
+<<endif>>
+<<if HasFlag("found_false_id")>>
+Barista: Your ID looks... new. Want a coffee or an alibi?
+<<endif>>
+<<command SetFlag("has_key", true)>>
+Narrator: You pocket a small key. Somewhere, a door is now less stubborn.
+===

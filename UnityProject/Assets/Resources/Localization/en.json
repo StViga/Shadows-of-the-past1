@@ -1,0 +1,13 @@
+{
+  "ui.new_game": "New Game",
+  "ui.load_game": "Load Game",
+  "ui.settings": "Settings",
+  "ui.quit": "Quit",
+  "ui.language": "Language",
+
+  "dlg.barista.hello": "Morning. Coffee?",
+  "dlg.priest.whisper": "You heard it too, didn't you? The whisper behind the altar.",
+
+  "hint.door_locked": "It's locked.",
+  "hint.door_key": "A key might fit here."
+}
