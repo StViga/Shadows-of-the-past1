@@ -1,0 +1,12 @@
+title: scene_old_house_outside
+---
+// scene bg old_house_night
+// show alex normal at right with moveinright
+Все осталось таким же, как и в моих воспоминаниях.
+// show alex normal at center with move
+// scene bg old_house_inside
+Ты заходишь внутрь. В воздухе пахнет пылью. На полу лежит ящик с письмами отца.
+// hide alex with moveoutleft
+[[Открыть письма и прочитать|scene_old_house_letters]]
+[[Оставить письма нетронутыми и исследовать дом|scene_old_house_search]]
+===

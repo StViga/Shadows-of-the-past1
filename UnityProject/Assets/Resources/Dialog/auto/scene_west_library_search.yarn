@@ -1,0 +1,6 @@
+title: scene_west_library_search
+---
+Ты находишь книгу с закладкой. В ней — схема подвала клиники, с пометкой 'Не входить'.
+<<command SetFlag("west_found_blueprint", true)>>
+[[Go to scene_west_district|scene_west_district]]
+===

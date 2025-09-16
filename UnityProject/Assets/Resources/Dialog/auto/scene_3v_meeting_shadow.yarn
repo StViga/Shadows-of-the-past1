@@ -1,0 +1,9 @@
+title: scene_3v_meeting_shadow
+---
+// scene bg nightmare_sewer with horror_flash  # Полный мрак
+Тень появляется перед тобой.
+// show shadow at center
+Ты теряешь сознание...
+// hide shadow
+// jump scene_4_madness  # Финал безумия
+===

@@ -1,0 +1,13 @@
+title: scene_west_school
+---
+// scene bg school_ruins with fade
+// play sound "audio/door_bang.ogg"
+Ты заходишь внутрь через выбитую дверь. Пыль пляшет в лучах закатного света. Всё мертво, кроме звуков шагов, которые... не твои?
+// show shadow at left with dissolve
+Кто здесь?
+// hide shadow
+Ответа нет. Только скрип доски в одном из классов.
+[[Пойти на звук|scene_west_school_sound]]
+[[Спрятаться и наблюдать|scene_west_school_hide]]
+[[Сбежать|scene_west_district]]
+===

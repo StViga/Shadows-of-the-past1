@@ -1,0 +1,10 @@
+title: scene_old_house_exit
+---
+// scene bg street_night with fade
+// show alex normal at right with moveinright
+Ты выходишь на улицу. Ночной воздух холодит кожу.
+// hide alex with moveoutleft
+[[Пойти в гостиницу|scene_2b]]
+[[Отправиться в центр города|scene_city]]
+[[Уехать из города|ending_escape]]
+===

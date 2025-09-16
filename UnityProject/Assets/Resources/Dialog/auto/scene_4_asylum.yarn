@@ -1,0 +1,17 @@
+title: scene_4_asylum
+---
+[[Go to scene_4_asylum_check_has_diary|scene_4_asylum_check_has_diary]]
+// window hide  # Убираем текстовое окно на время видео
+// play movie "videos/asylum_exterior.webm" loop  # Показываем видео отеля
+// pause 4  # Держим видео 4 секунд
+// stop movie  # Останавливаем видео
+// scene bg asylum_outside with fade  # Фон лечебницы снаружи
+// window show  # Показываем текстовое окно
+// play music "audio/asylum_ambience.mp3"  # Жуткий фоновый звук
+// show alex normal at right with moveinright
+// show alex normal at center with move
+Ты стоишь перед мрачным зданием старой лечебницы.
+Ветер проносит по земле сухие листья, окна тёмные и пустые.
+[[Зайти внутрь|scene_4_enter_asylum]]
+[[Развернуться и уйти|scene_4_escape]]
+===

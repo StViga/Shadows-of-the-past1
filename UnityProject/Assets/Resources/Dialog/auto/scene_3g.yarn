@@ -1,0 +1,13 @@
+title: scene_3g
+---
+[[Go to scene_3g_check_chapel_shadow_whisper|scene_3g_check_chapel_shadow_whisper]]
+// scene bg dream with fade  # Фон сна
+// play music "audio/dream_theme.mp3"  # Играет жуткая музыка сна (замени файл на свой)
+Ты оказываешься в странном месте...
+Всё вокруг размыто, как будто это сон.
+// show shadow with dissolve  # Появляется тёмная фигура
+Ты видишь тень, которая стоит вдалеке.
+Она зовёт тебя по имени...
+[[Подойти к тени|scene_3g_approach]]
+[[Остаться на месте|scene_3g_stay]]
+===

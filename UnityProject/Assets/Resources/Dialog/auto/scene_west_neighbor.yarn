@@ -1,0 +1,12 @@
+title: scene_west_neighbor
+---
+// scene bg old_house_outside with fade
+// show old_man at left with dissolve
+Старик выходит на крыльцо, будто ждал тебя.
+Ты похож на него. Такой же упрямый взгляд. Это ты, Алекс?
+Да. Вы знали моего отца?
+Мы вместе строили эту улицу... А потом он ушёл в ту клинику. После этого всё изменилось.
+[[Расспросить о детстве|scene_west_neighbor_childhood]]
+[[Спросить про клинику|scene_west_neighbor_asylum]]
+[[Промолчать и уйти|scene_west_district]]
+===

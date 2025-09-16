@@ -1,0 +1,14 @@
+title: scene_3v
+---
+// scene bg hotel_basement with fade  # Фон подвала гостиницы
+// play music "audio/basement_ambience.mp3"  # Жуткая фоновая музыка
+Ты открываешь скрипучую дверь и спускаешься вниз.
+В воздухе пахнет сыростью и плесенью.
+Где-то капает вода...
+// show shadow at left with dissolve  # Тень мелькает сбоку
+Ты видишь тень, исчезающую в темноте...
+Кажется, она зовёт тебя дальше.
+// hide shadow
+[[Пойти за тенью|scene_3v_follow_shadow]]
+[[Осмотреться в подвале|scene_3v_search_basement]]
+===

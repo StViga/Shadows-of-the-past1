@@ -1,0 +1,11 @@
+title: scene_south_district
+---
+// scene bg south_district with fade
+// play music "audio/hotel_theme.mp3" fadein 2.0
+Южный район города выглядит... живым. Слишком живым.
+Вывески кафе всё ещё мигают, двери гостиницы открыты, будто в городе никогда ничего не случалось.
+[[Зайти в гостиницу|scene_2b]]
+[[Зайти в кафе|scene_south_cafe]]
+[[Посетить фотоателье|scene_south_studio]]
+[[Вернуться в центр|scene_city]]
+===

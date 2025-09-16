@@ -1,0 +1,11 @@
+title: scene_east_morgue
+---
+// scene bg morgue_inside with fade
+// play music "audio/basement_ambience.mp3"
+Холод ударяет в лицо. Ты заходишь в здание, где, по слухам, скрывали последствия экспериментов.
+// show coroner at right with dissolve
+Я знал, что ты вернёшься. У нас есть нераспознанное тело... Совпадение по ДНК с тобой.
+[[Осмотреть тело|scene_east_morgue_body]]
+[[Спросить, откуда анализ|scene_east_morgue_dna]]
+[[Уйти|scene_east_district]]
+===

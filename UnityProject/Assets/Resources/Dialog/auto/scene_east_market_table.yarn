@@ -1,0 +1,9 @@
+title: scene_east_market_table
+---
+// show old_toy at center with dissolve
+На столе — твоя старая игрушка. Её не может здесь быть.
+Где вы это взяли?
+Ты сам оставил. В тот день, когда тебя увели из дома.
+<<command SetFlag("has_toy", true)>>
+[[Go to scene_east_district|scene_east_district]]
+===

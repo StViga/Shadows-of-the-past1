@@ -1,0 +1,9 @@
+title: scene_old_house_painting_close
+---
+// scene bg old_painting_close with fade
+Ты приглядываешься. Лицо на портрете... Это ты.
+Но картина выглядит старой. Слишком старой.
+Как такое возможно?
+[[Потрогать портрет|ending_madness]]
+[[Оставить всё как есть|scene_old_house_search]]
+===

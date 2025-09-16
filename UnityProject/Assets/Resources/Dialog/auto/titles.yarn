@@ -1,0 +1,12 @@
+title: titles
+---
+// scene bg black with fade
+// show text """
+// {size=40}{color=#ffffff}{b}Сценарий:{/b} StViga
+// {b}Художники:{/b} StViga, AI
+// {b}Программист:{/b} StViga
+// Спасибо за игру!
+// """ with dissolve
+// $ renpy.pause(15)  # Длительность титров
+// return
+===

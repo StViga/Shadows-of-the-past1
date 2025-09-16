@@ -1,0 +1,15 @@
+title: scene_3v_follow_shadow
+---
+Ты делаешь шаг вперёд, но вдруг пол трескается под тобой!
+// play sound "audio/fall_crack.ogg"
+// scene bg hotel_basement
+// with vpunch  # Вибрация экрана
+Пол уходит из-под ног! Ты падаешь вниз!
+// scene black with fade
+// pause 0.2
+// play sound "audio/falling_wind.ogg"  # Добавляем звук падения
+// scene bg secret_tunnel
+Ты падаешь в узкий туннель.
+Теперь назад дороги нет...
+[[Go to scene_3v_secret_room|scene_3v_secret_room]]
+===

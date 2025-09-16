@@ -1,0 +1,11 @@
+title: scene_west_library
+---
+// scene bg library_inside with fade
+// play music "audio/ambient.mp3"
+Ты входишь в пыльную библиотеку. Внутри пахнет мокрой бумагой и молчанием.
+// show librarian at right with dissolve
+Закрыты мы. Но для тебя — исключение.
+[[Спросить про старые газеты|scene_west_library_newspapers]]
+[[Искать что-то самостоятельно|scene_west_library_search]]
+[[Уйти|scene_west_district]]
+===

@@ -1,0 +1,10 @@
+title: scene_4_madness
+---
+// scene bg nightmare_sewer with horror_flash
+// play sound "audio/whispers.ogg"
+Шёпоты заполняют твой разум. Они становятся громче, заставляя тебя зажмуриться.
+// show shadow at center with slow_dissolve
+Перед тобой вырисовывается фигура. Ты не можешь двигаться.
+[[Протянуть руку|ending_4]]
+[[Закричать|ending_4]]
+===

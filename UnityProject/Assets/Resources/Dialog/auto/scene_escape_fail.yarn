@@ -1,0 +1,8 @@
+title: scene_escape_fail
+---
+// scene bg black with flash
+// play sound "audio/death_scream.ogg"
+Ты поворачиваешься назад...
+Последнее, что ты видишь — это пустые глаза тени.
+// call screen game_over_screen  # Переход на экран смерти
+===

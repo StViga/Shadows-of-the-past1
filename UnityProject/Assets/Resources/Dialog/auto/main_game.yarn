@@ -1,0 +1,35 @@
+title: main_game
+---
+// stop music fadeout 1.0
+// scene bg road_night with fade
+// play music "audio/ambient.mp3"
+// $ player_name = renpy.input("Как зовут нашего героя?", default="Алекс").strip().capitalize()
+// if player_name == "":
+// $ player_name = "Алекс"
+// show alex normal at left with moveinleft
+Спустя 15 лет я снова здесь…
+// window hide  # Прячем стандартное окно диалога
+{color=#AAAAAA}Ветер проносится по пустынной дороге, поднимая пыль и мертвые листья.{/color}
+// show alex normal at center with move
+Я думал, что никогда больше не вернусь в этот город.
+{color=#AAAAAA}Но несколько недель назад кто-то начал присылать мне письма…{/color}
+// show letter at center with dissolve
+{color=#AAAAAA}Ты достаёшь последнее письмо из кармана. Пожелтевшая бумага, аккуратный почерк.{/color}
+{color=#AAAAAA}Кажется, что ты слышишь голос в голове.{/color}
+{color=#AA0000}Ты знаешь, что должно было случиться.{/color}
+{color=#AA0000}Правда ближе, чем ты думаешь.{/color}
+// hide letter with fade
+// show alex sad
+Кто это и зачем он хочет, чтобы я вернулся?
+{color=#AAAAAA}Ты ощущаешь холодок, пробежавший по спине. Город перед тобой кажется пустым, мёртвым.{/color}
+// show old_photo at center with dissolve
+{color=#AAAAAA}Вместе с письмом пришла старая фотография. На ней — твой отец. А рядом… кто-то, кого ты не помнишь.{/color}
+// hide old_photo with fade
+// show alex worried
+Почему я ничего не помню?
+{color=#AAAAAA}Ты сжимаешь пальцы в кулак и делаешь шаг вперёд.{/color}
+[[Пойти в старый дом|scene_old_house_outside]]
+[[Пойти в гостиницу|scene_2b]]
+[[Отправиться в центр города|scene_city]]
+[[Уехать из города|ending_escape]]
+===

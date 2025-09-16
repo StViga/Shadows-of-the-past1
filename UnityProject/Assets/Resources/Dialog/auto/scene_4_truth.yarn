@@ -1,0 +1,11 @@
+title: scene_4_truth
+---
+[[Go to scene_4_truth_check_morgue_body_double|scene_4_truth_check_morgue_body_double]]
+// scene bg secret_room with fade
+Ты листаешь старые медицинские отчёты. Они датированы годами, когда ты был ребёнком.
+Среди документов ты находишь своё имя. Записи говорят, что ты был объектом экспериментов.
+// show shadow at right with dissolve
+В углу комнаты шевелится тень.
+[[Продолжить читать документы|scene_4_investigation]]
+[[Бросить бумаги и бежать|scene_escape]]
+===

@@ -1,0 +1,9 @@
+title: scene_west_school_sound
+---
+// scene bg classroom_dark with fade
+На доске мелом написано: 'Я всё ещё здесь.'
+// show old_diary at center with dissolve
+Ты находишь обгоревшую тетрадь. Записи — маниакальные, как будто кто-то пытался удержать рассудок.
+<<command SetFlag("has_diary", true)>>
+[[Go to scene_west_district|scene_west_district]]
+===

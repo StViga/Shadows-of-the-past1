@@ -1,0 +1,29 @@
+title: scene_2b
+---
+// window hide  # Убираем текстовое окно на время видео
+// play movie "videos/hotel_exterior.webm" loop  # Показываем видео отеля
+// pause 4  # Держим видео 4 секунд
+// stop movie  # Останавливаем видео
+// scene bg hotel
+// window show  # Показываем текстовое окно
+Перед тобой возвышается гостиница 'Затмение'.
+Она выглядит... слишком уютной для этого города.
+// show alex normal at left with moveinleft
+Почему-то внутри что-то ёкает, как будто я уже был здесь.
+// scene bg hotel_lobby with fade
+// play music "audio/hotel_theme.mp3" fadein 2.0  # Фоновая музыка гостиницы
+// show owner at left with dissolve # Показываем управляющего
+Как приятно видеть вас снова, [player_name].
+// hide owner
+// show alex normal at right with dissolve
+Но... я здесь впервые.
+// hide alex
+// show owner at left with dissolve # Показываем управляющего
+Он улыбается так, словно я сказал что-то глупое.
+Вы сняли номер заранее. Всё готово.
+// hide owner
+// show alex sad at right with dissolve
+Это странно... Я ведь не бронировал комнату.
+[[Спросить, почему номер уже готов|scene_2b_question]]
+[[Не спорить и взять ключ|scene_2b_room]]
+===

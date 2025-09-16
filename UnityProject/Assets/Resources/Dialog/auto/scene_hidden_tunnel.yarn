@@ -1,0 +1,24 @@
+title: scene_hidden_tunnel
+---
+// scene bg secret_tunnel with fade
+// play music "audio/tunnel_ambience.mp3" fadein 1.5
+Ты входишь в тёмный туннель. Влага капает со свода, стены покрыты плесенью и старыми знаками.
+// if west_found_blueprint and morgue_father_experiments:
+Символы на стенах совпадают с пометками в документах отца. Ты чувствуешь, что приближаешься к чему-то важному.
+// scene bg underground_passage with fade
+Дальше — каменная арка. За ней слышно... дыхание?
+Ты делаешь шаг, и...
+// scene bg memory_hospital with flash
+Вспышка. Боль. Комната. Ты на столе. Вокруг — белые халаты. Один из них — твой отец.
+// show shadow_figure at center with dissolve
+{color=#990000}Ты должен был стать идеальным. Но ты выбрал помнить...{/color}
+<<command SetFlag("found_truth_tunnel", true)>>
+// jump scene_4_real_truth  # сцена финальной истины
+// elif west_found_blueprint:
+Ты доходишь до конца туннеля. Там тупик. Но в воздухе витает память, которую ты ещё не готов открыть.
+Тебе не хватает частиц правды.
+// return
+// else:
+Ты стоишь у входа, но не решаешься идти дальше. Что-то подсказывает: ты ещё не готов.
+// return
+===

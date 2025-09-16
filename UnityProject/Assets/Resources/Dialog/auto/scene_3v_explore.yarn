@@ -1,0 +1,8 @@
+title: scene_3v_explore
+---
+Ты идёшь вперёд в темноту, ощупывая стены.
+// show flickering_light at center with dissolve  # Находим мигающий фонарь
+В углу мигает старый фонарь. Кажется, здесь кто-то был...
+[[Взять фонарь и идти дальше|scene_3v_find_exit]]
+[[Искать что-то полезное вокруг|scene_3v_find_documents]]
+===

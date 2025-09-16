@@ -1,0 +1,7 @@
+title: scene_east_market_origin
+---
+Твой отец приносил мне сны. Он платил за них... голосами.
+Она смеётся. И становится ясно — это не просто продавец.
+<<command SetFlag("east_market_occult", true)>>
+[[Go to scene_east_district|scene_east_district]]
+===

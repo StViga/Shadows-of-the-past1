@@ -1,0 +1,23 @@
+title: ending_death
+---
+// scene bg black with fade
+// play sound "audio/heartbeat_slow.ogg"
+Сердце начинает биться всё медленнее...
+// show cold_hand at center with slow_dissolve
+Последнее, что ты чувствуешь — это ледяное прикосновение к твоей коже.
+Ты больше ничего не видишь.
+// call screen game_over_screen  # Показываем экран смерти
+// return
+// screen game_over_screen():
+// modal True
+black
+// text "Ты больше не проснёшься...":
+// xalign 0.5
+// yalign 0.4
+#ffffff
+// size 40
+// textbutton "Выйти в меню":
+// xalign 0.5
+// yalign 0.6
+// action MainMenu()
+===

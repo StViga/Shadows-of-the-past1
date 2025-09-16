@@ -1,0 +1,14 @@
+title: ending_madness
+---
+// scene bg dream_dark with fade
+// show alex confused at center with dissolve
+Ты идёшь вперёд, но пространство вокруг меняется.
+Стены растворяются, превращаясь в бесконечную тьму.
+Ты слышишь шаги, но не можешь понять, твои ли они.
+Добро пожаловать домой.
+// show shadow_figure at right with slow_dissolve
+Перед тобой стоит силуэт. Он похож на тебя.
+Ты больше не понимаешь, кто ты. Ты теряешь контроль.
+[[Go to ending_credits|ending_credits]]
+// return
+===

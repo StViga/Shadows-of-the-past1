@@ -1,0 +1,7 @@
+title: scene_west_neighbor_childhood
+---
+Ты был странным ребёнком. Не играл с другими. Всё рисовал двери.
+Когда твой отец приходил — ты замирал. Я это помню.
+<<command SetFlag("west_memory_door", true)>>
+[[Go to scene_west_district|scene_west_district]]
+===

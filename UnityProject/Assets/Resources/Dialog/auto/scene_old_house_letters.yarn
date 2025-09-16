@@ -1,0 +1,11 @@
+title: scene_old_house_letters
+---
+// scene bg old_house_inside
+// show alex normal at left with moveinleft
+Ты открываешь письма. В них говорится, что твой отец работал в психиатрической лечебнице...
+// show alex sad at center with move
+Эксперименты? Над людьми?
+// hide alex with moveoutright
+[[Отправиться в лечебницу|scene_4_asylum]]
+[[Оставить дом и покинуть город|scene_old_house_exit]]
+===

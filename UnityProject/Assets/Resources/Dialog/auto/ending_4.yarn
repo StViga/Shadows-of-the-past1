@@ -1,0 +1,9 @@
+title: ending_4
+---
+// show bg black with fade
+// play sound "audio/heartbeat_slow.ogg"
+Сердце начинает биться всё медленнее...
+Последнее, что ты чувствуешь — это ужасающее касание холода.
+// call screen game_over_screen  # Показываем экран смерти
+// return
+===

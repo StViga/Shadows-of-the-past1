@@ -1,0 +1,10 @@
+title: scene_old_house_flashback_check_has_toy
+---
+<<if HasFlag("has_toy")>>
+Ты держишь медвежонка... и комната вспыхивает ярким воспоминанием.
+// scene bg memory_hospital with flash
+Ты видишь, как отец вручает тебе эту игрушку в больничной палате.
+Это был его способ сказать прости. Или — прощай.
+<<endif>>
+// return
+===

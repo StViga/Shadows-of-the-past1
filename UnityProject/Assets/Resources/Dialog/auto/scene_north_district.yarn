@@ -1,0 +1,8 @@
+title: scene_north_district
+---
+// scene bg north_district with fade
+Ветер носит клочья бумаги по улицам. Здесь царит мрак и запустение.
+[[Подойти к лечебнице|scene_4_asylum]]
+[[Зайти в заброшенный парк|scene_north_park]]
+[[Вернуться в центр|scene_city]]
+===

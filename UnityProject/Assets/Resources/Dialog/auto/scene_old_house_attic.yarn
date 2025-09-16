@@ -1,0 +1,13 @@
+title: scene_old_house_attic
+---
+// scene bg attic
+// show alex normal at right with moveinright
+Ты слышишь странный шум наверху.
+На чердаке ты находишь детские рисунки, подписанные твоим именем.
+// scene bg old_picture
+Я этого не помню...
+// hide alex with moveoutleft
+[[Осмотреть коробку в углу|scene_old_house_box]]
+[[Искать другие улики|scene_old_house_more_clues]]
+[[Покинуть дом немедленно|scene_old_house_exit]]
+===

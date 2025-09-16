@@ -1,0 +1,18 @@
+title: scene_old_house_flashback
+---
+[[Go to scene_old_house_flashback_check_has_toy|scene_old_house_flashback_check_has_toy]]
+// scene bg black with fade
+// play sound "audio/whispers.ogg"  # Странные шёпоты в темноте
+Голова начинает болеть. В памяти всплывают размытые картинки...
+// scene bg old_photo_faded with slow_dissolve
+Ты видишь старый чёрно-белый снимок. Мужчина в больничном халате держит тебя за руку.
+Он что-то говорит, но слов не разобрать.
+// scene bg memory_hospital
+// show bg memory_hospital as blurred_scene at Transform(blur=10) with Dissolve(1.0) # Размытая картинка больницы
+Мелькает образ мрачной палаты. Ты слышишь отдалённые крики.
+// scene bg black with fade
+// play sound "audio/heartbeat_slow.ogg"
+Ты резко приходишь в себя, сердце колотится в груди.
+[[Вернуться к поискам в доме|scene_old_house_search]]
+[[Покинуть дом|scene_old_house_exit]]
+===

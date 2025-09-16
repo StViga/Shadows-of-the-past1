@@ -1,0 +1,7 @@
+title: scene_3v_find_exit
+---
+// scene bg underground_passage with fade  # Переход в новый тоннель
+Ты находишь узкий проход. Возможно, он ведёт наружу.
+[[Идти вперёд]]
+[[Остаться и изучить место|scene_3v_find_documents]]
+===

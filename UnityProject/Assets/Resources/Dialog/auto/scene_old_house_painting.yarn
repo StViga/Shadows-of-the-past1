@@ -1,0 +1,8 @@
+title: scene_old_house_painting
+---
+// scene bg old_painting with fade
+Ты подходишь к старинному портрету. Он выглядит очень знакомым.
+Сердце сжимается от странного чувства дежавю.
+[[Осмотреть картину ближе|scene_old_house_painting_close]]
+[[Отойти|scene_old_house_search]]
+===

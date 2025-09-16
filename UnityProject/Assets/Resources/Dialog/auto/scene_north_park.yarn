@@ -1,0 +1,9 @@
+title: scene_north_park
+---
+// scene bg park_night
+Сломанные качели, туманные силуэты и детский смех, которого быть не может.
+// show toy_bear with dissolve
+Ты находишь старую игрушку в песочнице. На ней вышито твоё имя.
+<<command SetFlag("has_toy", true)>>
+[[Go to scene_north_district|scene_north_district]]
+===

@@ -1,0 +1,8 @@
+title: scene_4_truth_check_morgue_body_double
+---
+<<if HasFlag("morgue_body_double")>>
+В одной из фотографий — тело... твоё тело? Но лицо изуродовано.
+Ты был мёртв? Или кто-то выдавал себя за тебя?
+<<endif>>
+// return
+===

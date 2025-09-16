@@ -1,0 +1,12 @@
+title: scene_south_studio
+---
+// scene bg photo_studio with fade
+// play sound "audio/door_creak.ogg"
+Дверь скрипит, когда ты входишь в затхлое помещение. Плёнка развешена на просушку, в витрине стоят старые камеры.
+// show camera_operator at right with dissolve
+Сюда редко кто заходит... Но ты — особенный случай.
+Почему?
+Ты оставил тут фото... или воспоминание.
+[[Попросить показать|scene_south_studio_memory_photo]]
+[[Уйти|scene_south_district]]
+===

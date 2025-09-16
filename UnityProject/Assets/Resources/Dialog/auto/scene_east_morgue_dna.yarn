@@ -1,0 +1,7 @@
+title: scene_east_morgue_dna
+---
+Проба была у меня давно. Приказ сверху. Тогда я не знал, чьё это...
+Он бросает на стол лист — приказ подписан инициалами твоего отца.
+<<command SetFlag("morgue_father_experiments", true)>>
+[[Go to scene_east_district|scene_east_district]]
+===

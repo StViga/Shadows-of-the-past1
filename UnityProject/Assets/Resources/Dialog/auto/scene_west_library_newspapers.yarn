@@ -1,0 +1,8 @@
+title: scene_west_library_newspapers
+---
+// scene bg library_archive with fade
+Ты находишь статью от 1994 года: 'Пациент погиб в клинике. Имя засекречено. Ведётся следствие.'
+На полях карандашом приписано: 'Папа?'
+<<command SetFlag("found_article", true)>>
+[[Go to scene_west_district|scene_west_district]]
+===

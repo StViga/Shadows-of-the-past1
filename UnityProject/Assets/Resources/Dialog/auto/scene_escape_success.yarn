@@ -1,0 +1,8 @@
+title: scene_escape_success
+---
+// scene bg hotel with fade
+// play sound "audio/door_bang.ogg"
+С трудом ты выбегаешь наружу, задыхаясь от страха.
+[[Остаться и попытаться разобраться|scene_4_investigation]]
+[[Сбежать из города|ending_2]]
+===

@@ -1,0 +1,7 @@
+title: scene_east_chapel_prayer
+---
+Ты опускаешь голову. Молча. В тишине слышишь своё имя, шёпотом. Оно звучит, как приговор.
+{color=#AA0000}Прими тень. Прими себя.{/color}
+<<command SetFlag("chapel_shadow_whisper", true)>>
+[[Go to scene_east_district|scene_east_district]]
+===

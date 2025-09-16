@@ -1,0 +1,12 @@
+title: scene_east_market
+---
+// scene bg market_empty with fade
+Ты идёшь между шатрами. Всё мертво. Лишь один лоток освещён тусклым светом лампы.
+// show market_woman at right with dissolve
+Смотри внимательней. Здесь продаются не овощи, а следы памяти.
+Вы меня с кем-то путаете...
+Ты ищешь отца. А нашёл — себя.
+[[Посмотреть, что у неё на столе|scene_east_market_table]]
+[[Спросить, откуда она знает про отца|scene_east_market_origin]]
+[[Уйти|scene_east_district]]
+===

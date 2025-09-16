@@ -1,0 +1,10 @@
+title: scene_west_district
+---
+// scene bg west_district with fade
+// play music "audio/ambient.mp3" fadein 1.0
+Запад города — это улицы с закрытыми ставнями и шорохами за углами.
+[[Поговорить с соседом отца|scene_west_neighbor]]
+[[Зайти в библиотеку|scene_west_library]]
+[[Проверить старую школу|scene_west_school]]
+[[Вернуться в центр|scene_city]]
+===

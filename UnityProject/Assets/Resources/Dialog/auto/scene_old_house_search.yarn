@@ -1,0 +1,12 @@
+title: scene_old_house_search
+---
+// scene bg old_house_inside with fade
+// show alex normal at left with moveinleft
+Ты продолжаешь осматривать дом.
+[[Прочитать письма|scene_old_house_read_letters]]
+[[Открыть шкаф|scene_old_house_cabinet]]
+[[Подняться на чердак|scene_old_house_attic]]
+[[Подойти к старому портрету|scene_old_house_painting]]
+[[Осмотреть странную дверь|scene_old_house_hidden_door]]
+[[Оставить дом|scene_old_house_exit]]
+===

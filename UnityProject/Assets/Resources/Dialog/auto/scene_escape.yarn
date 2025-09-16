@@ -1,0 +1,10 @@
+title: scene_escape
+---
+// scene bg underground_passage with flash
+// play sound "audio/footsteps.ogg"
+Сердце бешено колотится, ты мчишься по узкому туннелю, не разбирая дороги.
+// scene bg hotel with fade
+Спустя несколько минут ты выбегаешь из подвала. Перед тобой снова гостиница.
+[[Вернуться внутрь|scene_2b_room]]
+[[Уйти из города|ending_2]]
+===

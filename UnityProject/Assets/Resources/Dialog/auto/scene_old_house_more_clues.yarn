@@ -1,0 +1,11 @@
+title: scene_old_house_more_clues
+---
+// scene bg attic with fade
+Ты продолжаешь искать по углам чердака.
+// show old_toy at center with dissolve
+Среди пыли ты находишь старую игрушку – потерянного плюшевого медведя.
+На лапке вышито имя... Твоё имя.
+<<command SetFlag("has_toy", true)>>
+[[Взять игрушку|scene_old_house_search]]
+[[Оставить её|scene_old_house_search]]
+===

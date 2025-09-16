@@ -1,0 +1,9 @@
+title: scene_4_enter_room
+---
+// scene bg asylum_room with fade  # Фон палаты
+Ты заходишь в старую палату.
+На кровати кто-то сидит спиной к тебе...
+// show shadow_patient with dissolve  # Фигура в палате
+Фигура медленно поворачивается...
+// jump scene_4_madness  # Финал безумия
+===

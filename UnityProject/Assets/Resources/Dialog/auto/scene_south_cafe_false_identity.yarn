@@ -1,0 +1,9 @@
+title: scene_south_cafe_false_identity
+---
+Ты был здесь ребёнком. Говорил, что тебя забрали в 'белый дом с решётками'.
+Ты исчез, и потом всё пошло наперекосяк.
+Я не Макс. Я Алекс.
+Смотри в глаза правде, Алекс или Макс — какая разница?
+<<command SetFlag("cafe_false_id", true)>>
+[[Go to scene_south_district|scene_south_district]]
+===

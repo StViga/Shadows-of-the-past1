@@ -1,0 +1,11 @@
+title: scene_3v_find_documents
+---
+// scene bg secret_room with quick_flash  # Таинственная комната
+// show file_cabinet at left with dissolve
+Ты находишь старый шкаф с папками.
+// hide file_cabinet
+На одной из папок написано твоё имя...
+// show secret_papers at center with dissolve
+[[Открыть папку|scene_3v_secret_files]]
+[[Оставить документы и искать выход|scene_3v_find_exit]]
+===

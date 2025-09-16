@@ -1,0 +1,10 @@
+title: scene_4_final_escape
+---
+// scene bg underground_passage with shake  # Тоннель дрожит, будто рушится
+// play sound "audio/heartbeat_fast.ogg"
+Ты бежишь по мрачному подземному коридору, сердце бешено колотится.
+// show shadow at left with slow_dissolve
+В углу мелькает неясная тень. Ты слышишь шаги позади.
+[[Бежать дальше без оглядки|scene_escape_success]]
+[[Остановиться и посмотреть назад|scene_escape_fail]]
+===

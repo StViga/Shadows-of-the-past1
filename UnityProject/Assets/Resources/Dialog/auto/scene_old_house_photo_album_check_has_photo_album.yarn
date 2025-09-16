@@ -1,0 +1,8 @@
+title: scene_old_house_photo_album_check_has_photo_album
+---
+<<if HasFlag("has_photo_album")>>
+Ты инстинктивно сравниваешь лицо на фото с фигурами, что видишь в снах.
+Сходство пугающе точное. Фото словно запечатлело сон, который ещё не приснился.
+<<endif>>
+// return
+===

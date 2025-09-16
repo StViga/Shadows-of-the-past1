@@ -1,0 +1,11 @@
+title: scene_city
+---
+// scene bg black with fade  # Временный чёрный фон (пока нет фона города)
+Ты стоишь в центре пустынного города. Все улицы ведут к твоему прошлому.
+[[Пойти в старый дом|scene_old_house_outside]]
+[[Направиться на север|scene_north_district]]
+[[Направиться на юг|scene_south_district]]
+[[Направиться на запад|scene_west_district]]
+[[Направиться на восток|scene_east_district]]
+[[Уехать из города|ending_escape]]
+===

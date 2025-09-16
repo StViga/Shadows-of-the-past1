@@ -1,0 +1,16 @@
+title: ending_credits
+---
+// scene bg sunset with fade  # Показываем закат
+// play music "audio/ending_theme.mp3"
+Наконец-то всё стало ясно...
+// scene bg night_sky with fade  # Переключаем сцену на ночное небо
+Алекс ушёл в темноту, оставив прошлое позади.
+// scene bg black with fade
+// show text "{size=60}{color=#ffffff}До встречи!" with dissolve
+// $ renpy.pause(3)
+[[Go to titles|titles]]
+// return
+// transform fade_in:
+// alpha 0.0
+// linear 3.0 alpha 1.0  # Плавное появление текста за 3 секунды
+===

@@ -1,0 +1,7 @@
+title: scene_old_house_hidden_door
+---
+// scene bg hidden_door with fade
+Ты находишь странную дверь, наполовину скрытую за старым ковром.
+[[Попробовать открыть дверь|scene_old_house_secret_room]]
+[[Не трогать дверь|scene_old_house_search]]
+===

@@ -1,0 +1,10 @@
+title: scene_old_house_read_letters
+---
+// scene bg old_letters with fade
+// show alex normal at center with moveinbottom
+Ты медленно разворачиваешь старые, пожелтевшие страницы.
+Письма полны намёков на нечто жуткое, скрытое в этом городе.
+Один из писем заканчивается словами: 'Тебе нужно найти правду, пока не стало слишком поздно.'
+// hide alex with moveoutbottom
+[[Go to scene_old_house_search|scene_old_house_search]]
+===

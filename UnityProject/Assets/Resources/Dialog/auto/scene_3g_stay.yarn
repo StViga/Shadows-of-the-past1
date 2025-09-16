@@ -1,0 +1,8 @@
+title: scene_3g_stay
+---
+Ты остаёшься на месте.
+Тень приближается сама...
+// scene bg nightmare with fade  # Экран темнеет
+Ты просыпаешься в холодном поту.
+[[Go to wake_up|wake_up]]
+===

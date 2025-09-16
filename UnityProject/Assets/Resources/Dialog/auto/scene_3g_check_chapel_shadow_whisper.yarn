@@ -1,0 +1,8 @@
+title: scene_3g_check_chapel_shadow_whisper
+---
+<<if HasFlag("chapel_shadow_whisper")>>
+Ты слышишь в голове отголосок шёпота из часовни:
+{color=#990000}Ты обещал мне, что всё вспомнишь...{/color}
+<<endif>>
+// return
+===

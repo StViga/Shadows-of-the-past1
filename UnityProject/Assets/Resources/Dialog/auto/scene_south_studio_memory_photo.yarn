@@ -1,0 +1,11 @@
+title: scene_south_studio_memory_photo
+---
+// show old_photo_faded at center with dissolve
+Он подаёт тебе снимок. На нём — палата с окном, решётки, ребёнок на койке. В углу — силуэт мужчины в халате.
+Ты не хочешь, но узнаёшь обоих.
+Это… мой отец. А второй — я?
+Фотографии не лгут. Люди — да.
+<<command SetFlag("has_photo_album", true)>>
+<<command SetFlag("flag_memory_photo", true)>>
+[[Go to scene_south_district|scene_south_district]]
+===

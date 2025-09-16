@@ -1,0 +1,18 @@
+title: scene_south_cafe
+---
+[[Go to scene_south_cafe_check_cafe_false_id|scene_south_cafe_check_cafe_false_id]]
+// scene bg cafe_inside with fade
+// play music "audio/dream_theme.mp3" fadein 2.0
+Ты входишь в уютное, но странно пустое кафе. В воздухе запах ванили и старых газет.
+Бариста, молодой парень с тёмными кругами под глазами, смотрит прямо на тебя.
+// show cafe_barista at left with dissolve
+Ты опять пришёл. Долго тебя не было.
+Мы... знакомы?
+Ты просил оставить для тебя воспоминание. Вот оно.
+// show old_photo at center with dissolve
+Он протягивает тебе старую фотографию. На ней — ты. Но подпись другая: 'Макс Б. 1993 год'.
+<<command SetFlag("found_false_id", true)>>
+[[Спросить, кто такой Макс Б.|scene_south_cafe_false_identity]]
+[[Спросить, откуда у него это фото|scene_south_cafe_photo_origin]]
+[[Просто взять фото и уйти|scene_south_district]]
+===

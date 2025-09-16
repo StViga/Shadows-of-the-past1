@@ -1,0 +1,14 @@
+title: ending_truth
+---
+// scene bg asylum_inside with fade
+// show alex shocked at center with dissolve
+Ты находишь документы. В них сказано, что ты был частью эксперимента.
+Я... Я был пациентом?..
+Воспоминания вспыхивают, накрывая тебя волной ужаса.
+Ты вспоминаешь лицо отца. Его голос, его руки... Всё это было правдой.
+// show documents_reveal at center with fade
+На одной из фотографий ты видишь себя в белой больничной рубашке.
+Ты больше не можешь отрицать очевидное. Правда раскрыта.
+[[Go to ending_credits|ending_credits]]
+// return
+===

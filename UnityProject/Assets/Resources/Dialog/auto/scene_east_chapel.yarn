@@ -1,0 +1,13 @@
+title: scene_east_chapel
+---
+// scene bg chapel_inside with fade
+// play sound "audio/door_creak.ogg"
+Ты входишь в маленькую полуразрушенную часовню. Стены обуглены, купол пробит. В центре — лишь одна скамья и фигура в тени.
+// show priest_shadow at left with dissolve
+Ты вернулся, как и было предсказано.
+Вы... кто?
+Священник, что молился за тех, кого твой отец принёс в жертву ради науки.
+[[Спросить про жертвы|scene_east_chapel_victims]]
+[[Помолиться молча|scene_east_chapel_prayer]]
+[[Уйти|scene_east_district]]
+===

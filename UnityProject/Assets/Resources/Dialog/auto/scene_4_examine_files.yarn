@@ -1,0 +1,8 @@
+title: scene_4_examine_files
+---
+// scene bg asylum_files with fade  # Фон с архивами
+// show secret_papers with dissolve  # Медицинские документы
+Ты находишь пыльный шкаф с медицинскими записями.
+В одной из папок написано твоё имя...
+// jump scene_4_truth  # Истина раскрыта
+===

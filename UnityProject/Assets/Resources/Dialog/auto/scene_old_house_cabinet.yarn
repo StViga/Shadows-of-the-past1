@@ -1,0 +1,11 @@
+title: scene_old_house_cabinet
+---
+// scene bg old_cabinet with fade
+Ты открываешь скрипучий шкаф. Внутри – только пыль и паутина.
+// show old_key at center with dissolve
+Но вдруг, на нижней полке, ты замечаешь старый ключ.
+<<command SetFlag("has_key", true)>>
+[[Взять ключ]]
+[[Оставить его]]
+[[Go to scene_old_house_search|scene_old_house_search]]
+===

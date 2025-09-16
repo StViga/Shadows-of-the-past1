@@ -1,0 +1,12 @@
+title: scene_2b_question
+---
+Но я не бронировал номер...
+// hide alex
+// show owner at left with dissolve # Показываем управляющего
+Всё в порядке. Иногда судьба делает выбор за нас.
+// hide owner
+// show alex normal at right with dissolve
+Ответ заставляет меня напрячься, но я беру ключ.
+// hide alex
+[[Go to scene_2b_room|scene_2b_room]]
+===

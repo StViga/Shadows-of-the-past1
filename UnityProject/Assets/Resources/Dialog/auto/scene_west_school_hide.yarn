@@ -1,0 +1,8 @@
+title: scene_west_school_hide
+---
+Ты прячешься за шкафом. Кто-то проходит мимо — силуэт с перевязанной головой, будто из больницы.
+Ты дышишь тише и слышишь слова:
+Не забудь, кто ты на самом деле...
+<<command SetFlag("west_saw_patient_shadow", true)>>
+[[Go to scene_west_district|scene_west_district]]
+===

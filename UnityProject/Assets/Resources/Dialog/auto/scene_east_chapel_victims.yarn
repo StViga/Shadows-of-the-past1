@@ -1,0 +1,8 @@
+title: scene_east_chapel_victims
+---
+Шестеро исчезли. Четверо — дети. Двое — персонал. Никто не искал их. Никто, кроме меня.
+Мой отец...
+Он верил, что лечит. Но ты стал границей между разумом и одержимостью.
+<<command SetFlag("chapel_victims_knowledge", true)>>
+[[Go to scene_east_district|scene_east_district]]
+===

@@ -1,0 +1,12 @@
+title: scene_4_enter_asylum
+---
+// scene bg asylum_hallway with fade  # Фон внутри лечебницы
+Дверь тяжело скрипит, когда ты входишь внутрь.
+В коридорах пахнет сыростью и старостью.
+// show flickering_light with dissolve  # Мигающий свет в коридоре
+Лампочка над тобой вспыхивает и гаснет.
+// play sound "audio/whispers.ogg"
+Ты слышишь шёпот… или это просто ветер?
+[[Исследовать архивы|scene_4_examine_files]]
+[[Пойти в палату|scene_4_enter_room]]
+===

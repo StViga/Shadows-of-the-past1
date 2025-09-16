@@ -1,0 +1,7 @@
+title: scene_west_neighbor_asylum
+---
+Я слышал, что в подвале они держали кого-то... Твоего отца всё это сломало.
+Он ходил ночью, шептал что-то вроде 'они следят'.
+<<command SetFlag("west_asylum_paranoia", true)>>
+[[Go to scene_west_district|scene_west_district]]
+===

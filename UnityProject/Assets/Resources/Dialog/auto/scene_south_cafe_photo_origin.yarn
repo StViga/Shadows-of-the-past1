@@ -1,0 +1,9 @@
+title: scene_south_cafe_photo_origin
+---
+Это фото мне оставила женщина. Сказала: 'Он должен вспомнить'.
+Больше ничего не сказала. Но она плакала.
+Как она выглядела?
+Как тень, которая умеет плакать...
+<<command SetFlag("cafe_mother_hint", true)>>
+[[Go to scene_south_district|scene_south_district]]
+===

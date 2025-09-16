@@ -1,0 +1,8 @@
+title: scene_east_morgue_body
+---
+Ты подходишь к столу. Тело — обугленное, но лицо... твоё?
+Это... я?
+На груди выжжено: 'Тот, кто не хочет знать'.
+<<command SetFlag("morgue_body_double", true)>>
+[[Go to scene_east_district|scene_east_district]]
+===
