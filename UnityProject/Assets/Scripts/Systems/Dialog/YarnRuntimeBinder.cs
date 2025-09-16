@@ -15,7 +15,8 @@ namespace Game.Systems.Dialog
             _runner = GetComponent<DialogueRunner>();
 
             // Functions
-            _runner.AddFunction<bool, string>("HasFlag", YarnBridge.HasFlag);
+            // In Yarn 2.x, generic order is <TParam1, TResult>
+            _runner.AddFunction<string, bool>("HasFlag", YarnBridge.HasFlag);
 
             // Commands
             _runner.AddCommandHandler<string, bool>("SetFlag", YarnBridge.SetFlag);

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text.Json;
+using UnityEngine;
 
 namespace Game.Core
 {
@@ -36,11 +36,14 @@ namespace Game.Core
 
         public IEnumerable<string> Enumerate() => _flags;
 
-        // Simple JSON persistence for prototype
+        // Simple JSON persistence for prototype using Unity JsonUtility
+        [Serializable]
+        private class Wrapper { public List<string> items = new(); }
+
         public void Save(string path)
         {
-            var data = new List<string>(_flags);
-            var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
+            var wrap = new Wrapper { items = new List<string>(_flags) };
+            var json = JsonUtility.ToJson(wrap, true);
             File.WriteAllText(path, json);
         }
 
@@ -48,9 +51,12 @@ namespace Game.Core
         {
             if (!File.Exists(path)) return;
             var json = File.ReadAllText(path);
-            var data = JsonSerializer.Deserialize<List<string>>(json) ?? new List<string>();
+            var wrap = JsonUtility.FromJson<Wrapper>(json);
             _flags.Clear();
-            foreach (var f in data) _flags.Add(f);
+            if (wrap?.items != null)
+            {
+                foreach (var f in wrap.items) _flags.Add(f);
+            }
         }
     }
 }

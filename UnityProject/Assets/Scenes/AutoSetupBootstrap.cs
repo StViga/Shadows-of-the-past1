@@ -1,6 +1,5 @@
 #if UNITY_EDITOR || UNITY_STANDALONE
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Yarn.Unity;
 using Game.Content;
 using Game.Core;
@@ -17,26 +16,29 @@ public sealed class AutoSetupBootstrap : MonoBehaviour
         var root = new GameObject("_AutoBootstrap");
 
         // Core managers
-        var stats = root.AddComponent<StatsManager>();
-        var cycle = root.AddComponent<DayNightCycle>();
-        var sample = root.AddComponent<SampleSetup>();
+        root.AddComponent<StatsManager>();
+        root.AddComponent<DayNightCycle>();
+        root.AddComponent<SampleSetup>();
 
-        // Dialog runner
+        // Dialogue runner
         var runnerGO = new GameObject("DialogueRunner");
         var runner = runnerGO.AddComponent<DialogueRunner>();
-        runner.AdditionalLanguagesToLoad = new string[] { "ru" };
-        runner.startNode = "start"; // fallback
-        runner.variableStorage = runnerGO.AddComponent<InMemoryVariableStorage>();
+        runnerGO.AddComponent<InMemoryVariableStorage>();
         runnerGO.AddComponent<YarnRuntimeBinder>();
+        runner.startNode = "start"; // you can change to "main_game"
 
-        // Load all auto generated yarn files
-        var textAssets = Resources.LoadAll<TextAsset>("Dialog/auto");
-        foreach (var ta in textAssets)
+        // Try to find a YarnProject in Resources/Yarn/Project.asset
+        var project = Resources.Load<YarnProject>("Yarn/Project");
+        if (project != null)
         {
-            runner.AddScript(ta);
+            runner.yarnProject = project;
+        }
+        else
+        {
+            Debug.LogWarning("AutoSetupBootstrap: No YarnProject found at Resources/Yarn/Project. Create one and add your .yarn scripts.");
         }
 
-        // Make sure there is at least a Main Camera
+        // Ensure there is a Main Camera
         if (Camera.main == null)
         {
             var camGO = new GameObject("Main Camera");
