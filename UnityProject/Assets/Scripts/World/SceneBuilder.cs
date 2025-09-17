@@ -19,6 +19,7 @@ namespace Game.Scenes
         [Header("Interactive Prefabs")] public GameObject cafeSpotPrefab;
         public GameObject altarPrefab;
         public GameObject morgueDoorPrefab;
+        public GameObject entrancePrefab;
 
         [Header("Player")]
         public GameObject playerPrefab;
@@ -40,11 +41,25 @@ namespace Game.Scenes
             CreateZone(root.transform, ZoneType.CityEast, new Vector2(cell, 0));
             CreateZone(root.transform, ZoneType.Chapel, new Vector2(cell, cell));
             CreateZone(root.transform, ZoneType.Morgue, new Vector2(cell, -cell));
+            CreateZone(root.transform, ZoneType.Library, new Vector2(-cell, cell));
+            CreateZone(root.transform, ZoneType.School, new Vector2(-cell, -cell));
+            CreateZone(root.transform, ZoneType.Cafe, new Vector2(0, -cell*2));
+            CreateZone(root.transform, ZoneType.PhotoStudio, new Vector2(cell*2, 0));
+            CreateZone(root.transform, ZoneType.Neighbor, new Vector2(-cell*2, 0));
 
             // Place interactives
             SpawnCafe(new Vector2(0, -cell)); // south district
             SpawnAltar(new Vector2(cell, cell)); // chapel
             SpawnMorgueDoor(new Vector2(cell + 3, -cell));
+
+            // Entrances for all zones
+            SpawnEntrance(ZoneType.Library, new Vector2(-cell, cell + 2), "Library", "scene_west_library");
+            SpawnEntrance(ZoneType.School, new Vector2(-cell, -cell + 2), "School", "scene_west_school");
+            SpawnEntrance(ZoneType.Cafe, new Vector2(0, -cell*2 + 2), "Cafe", "scene_south_cafe");
+            SpawnEntrance(ZoneType.PhotoStudio, new Vector2(cell*2 - 2, 0), "Photo Studio", "scene_south_studio");
+            SpawnEntrance(ZoneType.Neighbor, new Vector2(-cell*2 + 2, 0), "Neighbor", "scene_west_neighbor");
+            SpawnEntrance(ZoneType.Chapel, new Vector2(cell, cell + 2), "Chapel", "scene_east_chapel");
+            SpawnEntrance(ZoneType.Market, new Vector2(cell*2, cell), "Market", "scene_east_market");
 
             // Player spawn
             var p = Instantiate(playerPrefab, Vector3.zero, Quaternion.identity);
@@ -117,6 +132,19 @@ namespace Game.Scenes
             col.isTrigger = true;
             go.AddComponent<PlayerInteractor>();
             go.AddComponent<NightDoorMorgue>();
+        }
+
+        private void SpawnEntrance(ZoneType type, Vector2 pos, string label, string yarnNode)
+        {
+            var go = new GameObject($"Entrance_{type}");
+            go.transform.position = pos;
+            var col = go.AddComponent<BoxCollider2D>();
+            col.isTrigger = true;
+            go.AddComponent<PlayerInteractor>();
+            var e = go.AddComponent<Game.World.Entrance>();
+            e.entranceName = label;
+            e.yarnNode = yarnNode;
+            e.spawnOffset = new Vector3(0.5f, 0.5f, 0);
         }
 
         private void Clear()

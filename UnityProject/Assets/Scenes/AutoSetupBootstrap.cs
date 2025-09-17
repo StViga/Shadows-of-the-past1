@@ -18,6 +18,9 @@ public sealed class AutoSetupBootstrap : MonoBehaviour
         // Core managers
         var stats = root.AddComponent<StatsManager>();
         var cycle = root.AddComponent<DayNightCycle>();
+        var flags = new GameFlagManager();
+        GameState.Init(flags, stats, null);
+        Game.Systems.Dialog.YarnBridge.Init(flags);
         var invGO = new GameObject("Inventory");
         invGO.transform.SetParent(root.transform);
         var inventory = invGO.AddComponent<Game.Gameplay.Crafting.InventoryManager>();
