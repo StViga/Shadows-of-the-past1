@@ -16,9 +16,17 @@ public sealed class AutoSetupBootstrap : MonoBehaviour
         var root = new GameObject("_AutoBootstrap");
 
         // Core managers
-        root.AddComponent<StatsManager>();
-        root.AddComponent<DayNightCycle>();
-        root.AddComponent<SampleSetup>();
+        var stats = root.AddComponent<StatsManager>();
+        var cycle = root.AddComponent<DayNightCycle>();
+        var invGO = new GameObject("Inventory");
+        invGO.transform.SetParent(root.transform);
+        var inventory = invGO.AddComponent<Game.Gameplay.Crafting.InventoryManager>();
+        var craftGO = new GameObject("Crafting");
+        craftGO.transform.SetParent(root.transform);
+        var crafting = craftGO.AddComponent<Game.Gameplay.Crafting.CraftingSystem>();
+        crafting.GetType().GetField("inventory", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.SetValue(crafting, inventory);
+        crafting.GetType().GetField("stats", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.SetValue(crafting, stats);
+        var sample = root.AddComponent<SampleSetup>();
 
         // Dialogue runner
         var runnerGO = new GameObject("DialogueRunner");
