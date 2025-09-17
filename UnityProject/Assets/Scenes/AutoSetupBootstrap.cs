@@ -28,6 +28,13 @@ public sealed class AutoSetupBootstrap : MonoBehaviour
         crafting.GetType().GetField("stats", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.SetValue(crafting, stats);
         var sample = root.AddComponent<SampleSetup>();
 
+        // HUD overlay with F5/F6 save-load
+        var hudGO = new GameObject("HUD");
+        hudGO.transform.SetParent(root.transform);
+        var hud = hudGO.AddComponent<Game.UI.HUDOverlay>();
+        hud.GetType().GetField("stats", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.SetValue(hud, stats);
+        hud.GetType().GetField("inventory", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.SetValue(hud, inventory);
+
         // Dialogue runner
         var runnerGO = new GameObject("DialogueRunner");
         var runner = runnerGO.AddComponent<DialogueRunner>();
