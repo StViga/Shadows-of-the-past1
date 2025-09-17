@@ -20,6 +20,9 @@ namespace Game.Systems.Dialog
 
             // Commands
             _runner.AddCommandHandler<string, bool>("SetFlag", YarnBridge.SetFlag);
+            _runner.AddCommandHandler<string, int>("GrantItem", YarnBridge.GrantItem);
+            _runner.AddCommandHandler("StartRitual", YarnBridge.StartRitual);
+            _runner.AddCommandHandler<string>("FindClue", YarnBridge.FindClue);
         }
     }
 }

@@ -1,6 +1,7 @@
 // Placeholder for integrating Yarn Spinner runtime conditions with our GameFlagManager
 using System.Collections.Generic;
 using Game.Core;
+using Game.Gameplay.Crafting;
 
 namespace Game.Systems.Dialog
 {
@@ -16,6 +17,29 @@ namespace Game.Systems.Dialog
         public static void SetFlag(string name, bool value)
         {
             _flags?.Set(name, value);
+        }
+
+        // Yarn: <<GrantItem "fat" 1>>
+        public static void GrantItem(string id, int amount)
+        {
+            var inv = UnityEngine.Object.FindObjectOfType<InventoryManager>();
+            if (inv == null) return;
+            inv.Add(id, amount);
+        }
+
+        // Yarn: <<StartRitual>>
+        public static void StartRitual()
+        {
+            var night = UnityEngine.Object.FindObjectOfType<Game.Gameplay.Systems.NightActivitiesSystem>();
+            if (night == null) return;
+            night.UseCandleForRitual();
+        }
+
+        // Yarn: <<FindClue "found_article">>
+        public static void FindClue(string flag)
+        {
+            if (_flags == null) return;
+            _flags.Set(flag, true);
         }
 
         public static IEnumerable<string> AllFlags() => Flags.All;
