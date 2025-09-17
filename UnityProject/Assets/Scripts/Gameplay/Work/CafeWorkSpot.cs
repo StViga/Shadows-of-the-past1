@@ -19,6 +19,8 @@ namespace Game.Gameplay.Work
 
         private void Awake()
         {
+            if (stats == null) stats = FindObjectOfType<StatsManager>();
+            if (cycle == null) cycle = FindObjectOfType<DayNightCycle>();
             Game.Systems.Dialog.YarnBridge.Init(flags);
         }
 
