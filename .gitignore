@@ -1,0 +1,60 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+Packages/manifest.temp.json
+Assets/AssetStoreTools*
+
+# Visual Studio
+.vs/
+*.csproj
+*.sln
+*.suo
+*.unityproj
+*.pidb
+*.user
+*.userprefs
+*.dll
+*.mdb
+*.opendb
+*.VC.db
+*.pdb
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# VSCode
+.vscode/
+
+# Crashlytics
+crashlytics-build.properties
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Yarn Spinner generated caches
+*.yarnc
+
+# Node
+node_modules/
+
+# Environment
+.env
+
+# PM2 logs
+.pm2/
+logs/
+*.log
+
+# Archives and backups
+*.tar.gz
+*.zip
+*.bak
+*.backup
