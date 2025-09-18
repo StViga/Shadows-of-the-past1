@@ -7,8 +7,8 @@ namespace Game.UI
 {
     public sealed class HUDOverlay : MonoBehaviour
     {
-        [SerializeField] private StatsManager stats = null!;
-        [SerializeField] private InventoryManager inventory = null!;
+        [SerializeField] private StatsManager stats = null;
+        [SerializeField] private InventoryManager inventory = null;
         [SerializeField] private Game.Core.GameFlagManager flags = new();
 
         private void Awake()

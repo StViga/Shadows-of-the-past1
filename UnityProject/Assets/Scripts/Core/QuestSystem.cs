@@ -44,10 +44,10 @@ namespace Game.Core
 
     public sealed class QuestLog
     {
-        private readonly Dictionary<string, Quest> _quests = new();
+        private readonly Dictionary<string, Quest> _quests = new Dictionary<string, Quest>();
 
         public void Add(Quest q) => _quests[q.Id] = q;
-        public Quest? Get(string id) => _quests.TryGetValue(id, out var q) ? q : null;
+        public Quest Get(string id) { _quests.TryGetValue(id, out var q); return q; }
         public IEnumerable<Quest> All() => _quests.Values;
     }
 }

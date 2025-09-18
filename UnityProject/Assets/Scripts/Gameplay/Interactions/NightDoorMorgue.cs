@@ -7,8 +7,8 @@ namespace Game.Gameplay.Interactions
 {
     public sealed class NightDoorMorgue : Interactable
     {
-        [SerializeField] private StatsManager stats = null!;
-        [SerializeField] private DayNightCycle cycle = null!;
+        [SerializeField] private StatsManager stats = null;
+        [SerializeField] private DayNightCycle cycle = null;
         [SerializeField] private int suspicionThreshold = 40;
         [SerializeField] private string falseIdFlag = Flags.CafeFalseId;
 

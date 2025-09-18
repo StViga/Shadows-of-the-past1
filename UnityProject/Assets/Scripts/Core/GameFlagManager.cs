@@ -7,9 +7,9 @@ namespace Game.Core
 {
     public class GameFlagManager
     {
-        private readonly HashSet<string> _flags = new();
+        private readonly HashSet<string> _flags = new HashSet<string>();
 
-        public event Action<string, bool>? OnFlagChanged;
+        public event Action<string, bool> OnFlagChanged;
 
         public bool Get(string flag) => _flags.Contains(flag);
 

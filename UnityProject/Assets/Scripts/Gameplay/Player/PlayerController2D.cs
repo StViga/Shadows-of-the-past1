@@ -6,7 +6,7 @@ namespace Game.Gameplay.Player
     public sealed class PlayerController2D : MonoBehaviour
     {
         [SerializeField] private float moveSpeed = 4f;
-        private Rigidbody2D _rb = null!;
+        private Rigidbody2D _rb;
         private Vector2 _input;
 
         private void Awake()

@@ -10,10 +10,10 @@ namespace Game.Core
         [Range(0,100)] public int sanity = 100;
         [Range(0,100)] public int fatigue;
 
-        public event Action<int>? OnMoneyChanged;
-        public event Action<int>? OnSuspicionChanged;
-        public event Action<int>? OnSanityChanged;
-        public event Action<int>? OnFatigueChanged;
+        public event Action<int> OnMoneyChanged;
+        public event Action<int> OnSuspicionChanged;
+        public event Action<int> OnSanityChanged;
+        public event Action<int> OnFatigueChanged;
 
         public void AddMoney(int amount)
         {

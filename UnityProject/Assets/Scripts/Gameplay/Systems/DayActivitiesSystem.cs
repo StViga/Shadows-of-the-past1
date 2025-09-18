@@ -7,9 +7,9 @@ namespace Game.Gameplay.Systems
     // Daytime: gather resources and clues
     public sealed class DayActivitiesSystem : MonoBehaviour
     {
-        [SerializeField] private InventoryManager inventory = null!;
-        [SerializeField] private StatsManager stats = null!;
-        [SerializeField] private GameFlagManager flags = new();
+        [SerializeField] private InventoryManager inventory = null;
+        [SerializeField] private StatsManager stats = null;
+        [SerializeField] private GameFlagManager flags = new GameFlagManager();
 
         private void Awake()
         {

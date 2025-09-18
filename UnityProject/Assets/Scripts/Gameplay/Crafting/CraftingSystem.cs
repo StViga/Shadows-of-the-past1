@@ -5,8 +5,8 @@ namespace Game.Gameplay.Crafting
 {
     public sealed class CraftingSystem : MonoBehaviour
     {
-        [SerializeField] private InventoryManager inventory = null!;
-        [SerializeField] private StatsManager stats = null!;
+        [SerializeField] private InventoryManager inventory = null;
+        [SerializeField] private StatsManager stats = null;
 
         public bool CanCraft(Recipe recipe)
         {

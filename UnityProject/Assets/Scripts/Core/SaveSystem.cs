@@ -8,12 +8,12 @@ namespace Game.Core
     [Serializable]
     public sealed class SaveData
     {
-        public List<string> flags = new();
+        public List<string> flags = new List<string>();
         public int money;
         public int suspicion;
         public int sanity;
         public int fatigue;
-        public Dictionary<string, int> inventory = new();
+        public Dictionary<string, int> inventory = new Dictionary<string, int>();
     }
 
     public static class SaveSystem

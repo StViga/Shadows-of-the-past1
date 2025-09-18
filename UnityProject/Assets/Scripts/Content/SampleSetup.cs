@@ -6,8 +6,8 @@ namespace Game.Content
 {
     public sealed class SampleSetup : MonoBehaviour
     {
-        [SerializeField] private DayNightCycle cycle = null!;
-        private GameFlagManager flags = new();
+        [SerializeField] private DayNightCycle cycle = null;
+        private GameFlagManager flags = new GameFlagManager();
 
         private void Awake()
         {

@@ -38,7 +38,7 @@ namespace Game.Core
         public const string EndingMadness = "ending_madness";
         public const string EndingDeath = "ending_death";
 
-        public static readonly IReadOnlyList<string> All = new List<string>
+        public static readonly System.Collections.Generic.IReadOnlyList<string> All = new System.Collections.Generic.List<string>
         {
             HasToy,
             HasKey,

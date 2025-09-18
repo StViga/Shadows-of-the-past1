@@ -5,7 +5,7 @@ namespace Game.Core
     // Simple global state holder for prototype. In production prefer DI or a proper service locator.
     public static class GameState
     {
-        public static GameFlagManager Flags { get; private set; } = new();
+        public static GameFlagManager Flags { get; private set; } = new GameFlagManager();
         public static StatsManager? Stats { get; private set; }
         public static LocalizationManager? Localization { get; private set; }
 

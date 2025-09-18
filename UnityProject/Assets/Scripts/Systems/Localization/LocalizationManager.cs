@@ -6,7 +6,7 @@ namespace Game.Localization
     public sealed class LocalizationManager : MonoBehaviour
     {
         [SerializeField] private string currentLanguage = "ru"; // "en" or "ru"
-        private Dictionary<string, string> table = new();
+        private Dictionary<string, string> table = new Dictionary<string, string>();
 
         private void Awake()
         {
@@ -37,7 +37,7 @@ namespace Game.Localization
         [System.Serializable]
         private class Pair { public string key; public string value; }
         [System.Serializable]
-        private class Wrapper { public List<Pair> items = new(); public Dictionary<string, string> ToDictionary(){ var d=new Dictionary<string,string>(); foreach(var p in items) d[p.key]=p.value; return d; } }
+        private class Wrapper { public List<Pair> items = new List<Pair>(); public Dictionary<string, string> ToDictionary(){ var d=new Dictionary<string,string>(); foreach(var p in items) d[p.key]=p.value; return d; } }
 
         private static string Wrap(string rawJson)
         {
@@ -67,7 +67,7 @@ namespace Game.Localization
         [System.Serializable]
         private class KV { public string k; public string v; }
         [System.Serializable]
-        private class Intermediate { public List<KV> items = new(); public object ToObject(){ var d=new Dictionary<string,object>(); foreach(var kv in items) d[kv.k]=kv.v; return d; } }
+        private class Intermediate { public List<KV> items = new List<KV>(); public object ToObject(){ var d=new Dictionary<string,object>(); foreach(var kv in items) d[kv.k]=kv.v; return d; } }
 
         private static string JsonToIntermediate(string json)
         {

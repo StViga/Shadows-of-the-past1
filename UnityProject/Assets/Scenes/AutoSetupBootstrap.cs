@@ -11,7 +11,7 @@ public sealed class AutoSetupBootstrap : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void Boot()
     {
-        if (Object.FindObjectOfType<DialogueRunner>() != null) return; // already set up
+        if (Object.FindObjectOfType<Yarn.Unity.DialogueRunner>() != null) return; // already set up
 
         var root = new GameObject("_AutoBootstrap");
 
@@ -40,13 +40,13 @@ public sealed class AutoSetupBootstrap : MonoBehaviour
 
         // Dialogue runner
         var runnerGO = new GameObject("DialogueRunner");
-        var runner = runnerGO.AddComponent<DialogueRunner>();
-        runnerGO.AddComponent<InMemoryVariableStorage>();
+        var runner = runnerGO.AddComponent<Yarn.Unity.DialogueRunner>();
+        runnerGO.AddComponent<Yarn.Unity.InMemoryVariableStorage>();
         runnerGO.AddComponent<YarnRuntimeBinder>();
         runner.startNode = "start"; // you can change to "main_game"
 
         // Try to find a YarnProject in Resources/Yarn/Project.asset
-        var project = Resources.Load<YarnProject>("Yarn/Project");
+        var project = Resources.Load<Yarn.Unity.YarnProject>("Yarn/Project");
         if (project != null)
         {
             runner.yarnProject = project;

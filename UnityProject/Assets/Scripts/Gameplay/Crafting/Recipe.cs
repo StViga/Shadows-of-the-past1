@@ -18,8 +18,8 @@ namespace Game.Gameplay.Crafting
     {
         public string recipeId = string.Empty;
         public StationType station;
-        public List<ItemAmount> inputs = new();
-        public List<ItemAmount> outputs = new();
+        public List<ItemAmount> inputs = new List<ItemAmount>();
+        public List<ItemAmount> outputs = new List<ItemAmount>();
         public int sanityDelta;
     }
 }

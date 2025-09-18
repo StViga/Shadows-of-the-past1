@@ -7,10 +7,10 @@ namespace Game.Gameplay.Systems
     // Nighttime: craft and pursue truth
     public sealed class NightActivitiesSystem : MonoBehaviour
     {
-        [SerializeField] private CraftingSystem crafting = null!;
-        [SerializeField] private InventoryManager inventory = null!;
-        [SerializeField] private StatsManager stats = null!;
-        [SerializeField] private GameFlagManager flags = new();
+        [SerializeField] private CraftingSystem crafting = null;
+        [SerializeField] private InventoryManager inventory = null;
+        [SerializeField] private StatsManager stats = null;
+        [SerializeField] private GameFlagManager flags = new GameFlagManager();
 
         private void Awake()
         {
